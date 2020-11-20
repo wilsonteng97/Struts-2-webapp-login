@@ -7,20 +7,28 @@
 
     <constant name="struts.devMode" value="true" />
 
-    <package name="testing" namespace="/test-server" extends="struts-default">
-        <!-- If no class attribute is specified the framework will assume success and
-        render the result index.jsp -->
-<!--        <default-action-ref name="index" />-->
-        <!-- If no name value for the result node is specified the success value is the default -->
-        <action name="index">
-            <result>/index.jsp</result>
-        </action>
-        <!-- If the URL is hello.action then call the execute method of class HelloWorldAction.
-		If the result returned by the execute method is success render the HelloWorld.jsp -->
-        <action name="hello" class="cz3002.grp14.action.HelloWorldAction" method="execute">
-            <result name="success">/HelloWorld.jsp</result>
-        </action>
+    <include file="/struts-packages/login.xml" />
 
+    <package name="login" namespace="/" extends="struts-default">
+        <action name="login*">
+            <result>/login.jsp</result>
+        </action>
     </package>
+
+<!--    <package name="testing" namespace="/test-server" extends="struts-default">-->
+<!--        &lt;!&ndash; If no class attribute is specified the framework will assume success and-->
+<!--        render the result index.jsp &ndash;&gt;-->
+<!--        <default-action-ref name="index" />-->
+<!--        &lt;!&ndash; If no name value for the result node is specified the success value is the default &ndash;&gt;-->
+<!--        <action name="index">-->
+<!--            <result>/index.jsp</result>-->
+<!--        </action>-->
+<!--        &lt;!&ndash; If the URL is hello.action then call the execute method of class HelloWorldAction.-->
+<!--		If the result returned by the execute method is success render the helloWorld.jsp &ndash;&gt;-->
+<!--        <action name="hello" class="cz3002.grp14.action.HelloWorldAction" method="execute">-->
+<!--            <result name="success">/helloWorld.jsp</result>-->
+<!--        </action>-->
+<!--    </package>-->
+
 
 </struts>
