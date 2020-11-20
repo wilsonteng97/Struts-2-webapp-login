@@ -1,4 +1,4 @@
-package cz3002.grp14.controller;
+package cz3002.grp14.action;
 
 import cz3002.grp14.model.MessageStore;
 
