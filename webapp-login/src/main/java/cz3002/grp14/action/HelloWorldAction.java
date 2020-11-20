@@ -1,21 +1,25 @@
 package cz3002.grp14.action;
 
-import cz3002.grp14.model.MessageStore;
+import cz3002.grp14.service.MessageService;
 
 import com.opensymphony.xwork2.ActionSupport;
 
 public class HelloWorldAction extends ActionSupport {
 
     /** Properties **/
-    private MessageStore messageStore;
+    private String message;
 
     public String execute() {
-        messageStore = new MessageStore() ;
-
+        MessageService messageService = new MessageService() ;
+        setMessage(messageService.getMessage());
         return SUCCESS;
     }
 
-    public MessageStore getMessageStore() {
-        return messageStore;
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }

@@ -1,9 +1,9 @@
-package cz3002.grp14.model;
+package cz3002.grp14.service;
 
-public class MessageStore {
+public class MessageService {
     private String message;
 
-    public MessageStore() {
+    public MessageService() {
         message = "Hello Struts User";
     }
 
