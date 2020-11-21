@@ -21,6 +21,7 @@ For Windows :
 4. Continue with the command below on MySQL Shell.
     ```
     create schema ase;
+    use ase;
     CREATE TABLE `user` (
         `USERNAME` VARCHAR(50) DEFAULT NULL,
         `PASSWORD` VARCHAR(50) DEFAULT NULL
