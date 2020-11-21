@@ -35,6 +35,8 @@ For Windows :
     ```sh
     mvn clean install
     ```
+3. If there are no errors, you should see the following message.
+![](https://github.com/wilsonteng97/Struts-2-webapp-login/raw/main/res/Maven_BuildSuccess.png)
     
 ### C. Tomcat Server
 1. Download [Apache Tomcat Server](http://tomcat.apache.org/). In our implementation, we use [version 9.0.40](https://tomcat.apache.org/download-90.cgi).
