@@ -28,6 +28,8 @@ For Windows :
     );
     INSERT INTO user values ('root', 'toor');
     ```
+3. If there are no errors, you should see the following.
+![](https://github.com/wilsonteng97/Struts-2-webapp-login/raw/main/res/mysql_setup2.png)
 
 ### B. Maven
 1. In the project directory, right click on `pom.xml` -> add to maven
