@@ -1,14 +1,35 @@
 package cz3002.grp14.action;
 
 import com.opensymphony.xwork2.ActionSupport;
+import cz3002.grp14.entity.User;
+import cz3002.grp14.service.LoginService;
+import org.apache.commons.lang3.StringUtils;
 
 public class LoginAction extends ActionSupport {
 
-    private String userID;
-    private String password;
+    private User user;
+
+    @Override
+    public void validate() {
+        // Fields are blank
+        System.out.println("Username: " + user.getUserID() + " | Password: " +  user.getPassword());
+//        if (StringUtils.isEmpty(user.getUserID())) { // userID field not entered
+//            addFieldError("userID", "Username cannot be blank");
+//        }
+//        if (StringUtils.isEmpty(user.getPassword())) { // password field not entered
+//            addFieldError("password", "Password cannot be blank");
+//        }
+
+        if (StringUtils.isEmpty(user.getUserID()) || StringUtils.isEmpty(user.getPassword())) {
+            System.out.println("Action Error");
+            addActionError("Username & Password cannot be blank");
+        }
+    }
 
     public String execute() {
-        if (getUserID().equals("root") && getPassword().equals("")) {
+        LoginService loginService = new LoginService();
+//        System.out.println(user.getUserID() + " | " +  user.getPassword());
+        if (loginService.verifyLogin(user)) {
             System.out.println("=============== Login Success");
             return SUCCESS;
         }
@@ -16,19 +37,11 @@ public class LoginAction extends ActionSupport {
         return LOGIN;
     }
 
-    public String getUserID() {
-        return userID;
+    public User getUser() {
+        return user;
     }
 
-    public void setUserID(String userID) {
-        this.userID = userID;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+    public void setUser(User user) {
+        this.user = user;
     }
 }
