@@ -1,7 +1,7 @@
 package cz3002.grp14.action;
 
 import com.opensymphony.xwork2.ActionSupport;
-import cz3002.grp14.entity.User;
+import cz3002.grp14.dao.entity.User;
 import cz3002.grp14.service.LoginService;
 import org.apache.commons.lang3.StringUtils;
 

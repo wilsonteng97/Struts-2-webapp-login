@@ -1,3 +1,6 @@
-cz3002\grp14\entity\User.class
+cz3002\grp14\dao\UserDAO.class
+cz3002\grp14\dao\DataAccessObject.class
 cz3002\grp14\service\LoginService.class
+cz3002\grp14\dao\entity\User.class
 cz3002\grp14\action\LoginAction.class
+cz3002\grp14\dao\DatabaseMySQLFactory.class

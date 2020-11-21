@@ -1,9 +1,19 @@
-package cz3002.grp14.entity;
+package cz3002.grp14.dao.entity;
 
 public class User {
 
     private String userID;
     private String password;
+
+    public User() {
+        userID = "";
+        password = "";
+    }
+
+    public User(String userID, String password) {
+        this.userID = userID;
+        this.password = password;
+    }
 
     public String getUserID() {
         return userID;
