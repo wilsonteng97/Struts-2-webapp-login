@@ -10,14 +10,19 @@
     </head>
 
     <body>
+        <h1>CZ3002 Login Webapp</h1>
+        <h3>By: Wilson Thurman Teng, Goh Jun Le, Chester Yeoh</h3>
+
         <s:form action="login">
             <s:textfield label="Username" key="user.userID" />
             <s:password label="Password" key="user.password" />
-            <s:if test='hasActionErrors()'>
-                <s:actionerror />
-            </s:if>
             <s:submit />
         </s:form>
+
+        <s:if test='hasActionErrors()'>
+            <s:actionerror />
+        </s:if>
+
     </body>
 
 </html>
