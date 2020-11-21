@@ -21,6 +21,7 @@ For Windows :
 4. Continue with the command below on MySQL Shell.
     ```
     create schema ase;
+    use ase;
     CREATE TABLE `user` (
         `USERNAME` VARCHAR(50) DEFAULT NULL,
         `PASSWORD` VARCHAR(50) DEFAULT NULL
@@ -38,9 +39,9 @@ For Windows :
 ### C. Tomcat Server
 1. Download [Apache Tomcat Server](http://tomcat.apache.org/). In our implementation, we use [version 9.0.40](https://tomcat.apache.org/download-90.cgi).
 2. Install 'Smart Tomcat' plugin in IntelliJ
-![](https://raw.githubusercontent.com/wilsonteng97/Struts-2-webapp-login/master/res/SmartTomcat_Plugin.png)
+![](https://github.com/wilsonteng97/Struts-2-webapp-login/raw/main/res/SmartTomcat_Plugin.png)
 3. Follow the configuration below:
-![](https://raw.githubusercontent.com/wilsonteng97/Struts-2-webapp-login/master/res/SmartTomcat_Config.png)
+![](https://github.com/wilsonteng97/Struts-2-webapp-login/raw/main/res/SmartTomcat_Config.png)
 
 ### Running the web application
 After setting up MySQL, Maven and Tomcat, you can run your application. The credentials inserted earlier into the database are as follows:
