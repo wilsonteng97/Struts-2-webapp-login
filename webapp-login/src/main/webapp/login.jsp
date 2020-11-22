@@ -7,17 +7,22 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Login Page</title>
+        <link href="./css/login.css" rel="stylesheet" type="text/css"/> 
     </head>
 
     <body>
-        <h1>CZ3002 Login Webapp</h1>
-        <h3>By: Wilson Thurman Teng, Goh Jun Le, Chester Yeoh</h3>
+        <header>
+            <h1>CZ3002 Login Webapp</h1>
+            <h3>By: Wilson Thurman Teng, Goh Jun Le, Chester Yeoh</h3>
+        </header>
 
-        <s:form action="login">
-            <s:textfield label="Username" key="user.userID" />
-            <s:password label="Password" key="user.password" />
-            <s:submit />
-        </s:form>
+        <div class="container">
+            <s:form action="login">
+                <s:textfield label="Username" key="user.userID" />
+                <s:password label="Password" key="user.password" />
+                <s:submit />
+            </s:form>
+        </div>
 
         <s:if test='hasActionErrors()'>
             <s:actionerror />
