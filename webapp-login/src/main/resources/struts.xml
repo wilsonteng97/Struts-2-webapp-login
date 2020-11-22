@@ -9,11 +9,5 @@
 
     <include file="/struts-packages/login.xml" />
 
-    <package name="login" namespace="/" extends="struts-default">
-        <action name="login*">
-            <result>/login{1}.jsp</result>
-        </action>
-    </package>
-
-
 </struts>
+
