@@ -6,10 +6,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Success</title>
+        <link href="./styles/success.css" rel="stylesheet" type="text/css"/> 
     </head>
 
     <body>
-        <h1>Login Success!</h1>
+        <h1>Login Success! <img src="./styles/success_icon.svg"/></h1>
     </body>
 
 </html>
