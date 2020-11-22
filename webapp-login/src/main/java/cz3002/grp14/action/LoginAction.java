@@ -34,6 +34,7 @@ public class LoginAction extends ActionSupport {
             return SUCCESS;
         }
         System.out.println("=============== Login Fail, redirect to login again");
+        addActionError("Either Username or Password is wrong, please try again");
         return LOGIN;
     }
 
