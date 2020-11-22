@@ -1,6 +1,12 @@
 # Struts 2 Login Webapp
-
+![](https://github.com/wilsonteng97/Struts-2-webapp-login/raw/main/res/LoginJSP.png)
 Submission for CZ3002 Advanced Software Engineering | Implementation of Struts V2.0 Framework
+
+## Features
+#### Blank input field validation 
+![](https://github.com/wilsonteng97/Struts-2-webapp-login/raw/main/res/LoginJSP_blankError.png)
+#### Login Verification
+![](https://github.com/wilsonteng97/Struts-2-webapp-login/raw/main/res/LoginJSP_LoginFail.png)
 
 ## Setup
 | <!-- --> | <!-- --> |
