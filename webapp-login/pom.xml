@@ -57,7 +57,7 @@
     </dependencies>
 
     <build>
-        <finalName>CZ3002_GRP14_ASSIGNMENT2_1.0.0</finalName>
+        <finalName>CZ3002_GRP14_ASSIGNMENT2_V1</finalName>
         <plugins>
 
             <plugin>
