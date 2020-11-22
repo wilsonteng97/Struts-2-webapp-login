@@ -5,10 +5,10 @@ Submission for CZ3002 Advanced Software Engineering | Implementation of Struts V
 ## Features
 #### Blank input field validation 
 ![](https://github.com/wilsonteng97/Struts-2-webapp-login/raw/main/res/LoginJSP_BlankError.png)
-#### Login Verification - Success
-![](https://github.com/wilsonteng97/Struts-2-webapp-login/raw/main/res/LoginJSP_LoginSuccess.png)
 #### Login Verification - Fail
 ![](https://github.com/wilsonteng97/Struts-2-webapp-login/raw/main/res/LoginJSP_LoginFail.png)
+#### Login Verification - Success
+![](https://github.com/wilsonteng97/Struts-2-webapp-login/raw/main/res/LoginJSP_LoginSuccess.png)
 
 ## Setup
 | <!-- --> | <!-- --> |
